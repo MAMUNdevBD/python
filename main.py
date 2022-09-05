@@ -18,7 +18,7 @@ student_1.Display_info()
 # Question b
 
 class School_student(Student): 
-    def __init__(self, Section, ResultSSC, DistrictOfSchool):
+    def __init__(self, Section=None, ResultSSC=None, DistrictOfSchool=None):
         super().__init__(self)
         self.Section = Section 
         self.ResultSSC = ResultSSC
@@ -42,7 +42,7 @@ school_student.Display_Info()
 # Question c
 
 class College_student(Student): 
-    def __init__(self, Section, ResultPolytechnic, DistrictOfSchool):
+    def __init__(self, Section=None, ResultPolytechnic=None, DistrictOfSchool=None):
         super().__init__(self)
         self.Section = Section 
         self.ResultPolytechnic = ResultPolytechnic
@@ -79,7 +79,7 @@ student_Unversity.Display_Info()
 
 # Question e
 
-class Waiver(Student):
+class Waiver(School_student, College_student):
     def __init__(self):
         super().__init__(self)
 
@@ -102,7 +102,7 @@ class Waiver(Student):
 
 waiver_1 = Waiver()
 waiver_1.ResultSSC = 5
-waiver_1.ResultPolytechnic = 3
+waiver_1.ResultPolytechnic = 3.58
 waiver_1.Display_Info()
 
 # Question f
