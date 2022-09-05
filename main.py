@@ -122,7 +122,7 @@ class Grade_Calculator(Student):
         print(f"CGPA: {self.Count_CGPA():.2f}" )
 
 grade_calculation = Grade_Calculator(4.00, 4.00, 4.00)
-grade_calculation.ID = 5038
+grade_calculation.ID = 50238
 grade_calculation.Display_Info()
 
 # Question g
